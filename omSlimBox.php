@@ -38,7 +38,6 @@ class omSlimBox {
 	}
 
 	public function enqueue_styles() {
-
 		if (!self::$css || is_admin() || is_feed()) return;
 		wp_enqueue_style('wp-slimbox', plugins_url('slimbox/css/slimbox2.css', __FILE__), false, self::$version);
 	}
