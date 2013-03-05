@@ -3,14 +3,5 @@
   "version": "0.0.0",
   "dependencies": {
     "slimbox": "https://slimbox.googlecode.com/files/slimbox-2.04.zip"
-  },
-  "gitHead": "70e08744ac37c5529e7c099356ac5a9e675c7e6f",
-  "_id": "omSlimBox@0.0.1",
-  "readme": "ERROR: No README.md file found!",
-  "description": "ERROR: No README.md file found!",
-  "commit": "70e08744ac37c5529e7c099356ac5a9e675c7e6f",
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:OzzyCzech/omslimbox.git"
   }
 }
