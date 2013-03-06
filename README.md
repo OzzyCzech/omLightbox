@@ -13,6 +13,8 @@ Wordpress plugin embeding [Slimbox2](http://www.digitalia.be/software/slimbox)
 
 ## How to install
 
+Use [BOWER](http://twitter.github.com/bower/) from Twitter
+
 ```
 cd wp-content/plugins
 bower install git@bitbucket.org:OzzyCzech/omslimbox.git
