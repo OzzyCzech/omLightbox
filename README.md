@@ -5,7 +5,6 @@ Wordpress plugin embeding [Slimbox2](http://www.digitalia.be/software/slimbox)
 - only 4kb of JavaScript
 - automatic or manual embed CSS or JavaScript to theme
 - super small PHP
--
 
 ## Slimbox2
 
