@@ -1,7 +1,8 @@
 {
   "name": "omSlimBox",
   "version": "0.0.0",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "slimbox": "https://slimbox.googlecode.com/files/slimbox-2.04.zip"
   }
 }
