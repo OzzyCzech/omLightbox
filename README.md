@@ -1,4 +1,4 @@
-# omSlimBox wordpress plugin
+# omLightBox wordpress plugin
 
 Wordpress plugin embeding [Nivo Lightbox](http://dev7studios.com/plugins/nivo-lightbox)
 
