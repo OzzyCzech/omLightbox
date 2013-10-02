@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: omSlimBox
+ * Plugin Name: omLightBox
  * Plugin URI: http://www.omdesign.cz
- * Description: SlimBox2 for Wordpress
- * Version: 1.0
+ * Description: Small responsive lightbox for Wordpress
+ * Version: 2.0
  * Author: Roman Ožana
  * Author URI: http://www.omdesign.cz/kontakt
  *
@@ -12,7 +12,7 @@
 class omSlimBox {
 
 	/** @var string */
-	public static $version = '2';
+	public static $version = 2;
 	/** @var bool */
 	public static $css = true;
 	/** @var bool */
@@ -32,30 +32,22 @@ class omSlimBox {
 
 	public function enqueue_scripts() {
 		if (!self::$js || is_admin()) return;
-		wp_enqueue_script(
-			'wp-slimbox', plugins_url('slimbox/js/slimbox2.js', __FILE__), array('jquery'), self::$version, true
-		);
+		wp_enqueue_script('omLightbox', plugins_url('lightbox/distr/nivo-lightbox.min.js', __FILE__), array('jquery'), self::$version, true);
+		wp_enqueue_script('omLightboxLoad', plugins_url('load.js', __FILE__), array('omLightbox'), self::$version, true);
 	}
 
 	public function enqueue_styles() {
 		if (!self::$css || is_admin() || is_feed()) return;
-		wp_enqueue_style('wp-slimbox', plugins_url('slimbox/css/slimbox2.css', __FILE__), false, self::$version);
+		wp_enqueue_style('omLightbox', plugins_url('lightbox/src/nivo-lightbox.css', __FILE__), false, self::$version);
+		wp_enqueue_style('omLightboxTheme', plugins_url('lightbox/themes/default/default.css', __FILE__), false, self::$version);
 	}
 
 
 	public function content($content) {
 		if (!self::$content) return $content;
 		$pattern = "/(<a(?![^>]*?rel=['\"]lightbox.*)[^>]*?href=['\"][^'\"]+?\.(?:bmp|gif|jpg|jpeg|png)\?{0,1}\S{0,}['\"][^\>]*)>/i";
-		$replacement = '$1 rel="' . (get_the_ID() ? 'lightbox-' . get_the_ID() : 'lightbox') . '">';
+		$replacement = '$1 data-lightbox-gallery="' . (get_the_ID() ? 'gallery-' . get_the_ID() : 'gallery') . '">';
 		return preg_replace($pattern, $replacement, $content);
-	}
-
-	/**
-	 * @param $name
-	 * @return mixed
-	 */
-	public static function options($name) {
-		return self::$options[$name];
 	}
 }
 

@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
-    "slimbox": "https://slimbox.googlecode.com/files/slimbox-2.05.zip"
+    "lightbox": "https://github.com/OzzyCzech/Nivo-Lightbox.git"
   }
 }

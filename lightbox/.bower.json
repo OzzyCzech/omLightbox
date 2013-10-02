@@ -1,0 +1,13 @@
+{
+  "name": "lightbox",
+  "homepage": "https://github.com/OzzyCzech/Nivo-Lightbox",
+  "_release": "7e2c3c86b1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7e2c3c86b10820cdaff901e42b9e3774db29a54a"
+  },
+  "_source": "https://github.com/OzzyCzech/Nivo-Lightbox.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/OzzyCzech/Nivo-Lightbox.git"
+}
