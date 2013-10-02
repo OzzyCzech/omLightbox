@@ -7,9 +7,7 @@ Wordpress plugin embeding [Nivo Lightbox](http://dev7studios.com/plugins/nivo-li
 - super small PHP
 - responsive and retina ready
 
-## Nivo Lightbox
-
-[Nivo Lightbox](http://dev7studios.com/plugins/nivo-lightbox)
+## [Nivo Lightbox](http://dev7studios.com/plugins/nivo-lightbox)
 
 There are a tonne of jQuery lightbox plugins in the world but none of them are as simple to
 set up and use as the Nivo Lightbox while still offering the flexibility and
