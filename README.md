@@ -1,14 +1,19 @@
 # omSlimBox wordpress plugin
 
-Wordpress plugin embeding [Slimbox2](http://www.digitalia.be/software/slimbox)
+Wordpress plugin embeding [Nivo Lightbox](http://dev7studios.com/plugins/nivo-lightbox)
 
-- only 4kb of JavaScript
+- only 7kb of JavaScript
 - automatic or manual embed CSS or JavaScript to theme
 - super small PHP
+- responsive and retina ready
 
-## Slimbox2
+## Nivo Lightbox
 
-[Slimbox2](http://www.digitalia.be/software/slimbox) is a 4 KB visual clone of the popular [Lightbox 2](http://lokeshdhakar.com/projects/lightbox2/) script by Lokesh Dhakar, written using the jQuery javascript library. 
+[Nivo Lightbox](http://dev7studios.com/plugins/nivo-lightbox)
+
+There are a tonne of jQuery lightbox plugins in the world but none of them are as simple to
+set up and use as the Nivo Lightbox while still offering the flexibility and
+accessibility available with the Nivo Lightbox.
 
 
 ## How to install
@@ -17,7 +22,7 @@ Use [BOWER](http://twitter.github.com/bower/) from Twitter
 
 ```
 cd wp-content/plugins
-bower install git@bitbucket.org:OzzyCzech/omslimbox.git
+bower install git@bitbucket.org:OzzyCzech/omlightbox.git
 ```
 
-Activate plugin in Wordpress admin
+Activate plugin in Wordpress admin area
