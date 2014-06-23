@@ -1,4 +1,4 @@
-# omLightbox Wordpress plugin
+# omLightBox Wordpress plugin
 
 Wordpress plugin embeding [Magnific Popup is a responsive lightbox](http://dimsemenov.com/plugins/magnific-popup/)
 
