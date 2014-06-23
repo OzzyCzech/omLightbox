@@ -1,8 +1,7 @@
 {
-  "name": "omLightBox",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "lightbox": "https://github.com/OzzyCzech/Nivo-Lightbox.git"
-  }
+	"name": "omLightBox",
+	"version": "0.0.0",
+	"dependencies": {
+		"magnific-popup": "git@github.com:dimsemenov/Magnific-Popup.git"
+	}
 }
