@@ -1,6 +1,6 @@
 # omLightBox Wordpress plugin
 
-Wordpress plugin embeding [Magnific Popup is a responsive lightbox](http://dimsemenov.com/plugins/magnific-popup/)
+Wordpress plugin embeding [Magnific Popup is a responsive lightbox](http://dimsemenov.com/plugins/magnific-popup/) or [Github](https://github.com/dimsemenov/Magnific-Popup)
 
 - only 20k javascript
 - automatic or manual embed CSS and JavaScript to theme
@@ -9,9 +9,6 @@ Wordpress plugin embeding [Magnific Popup is a responsive lightbox](http://dimse
 
 ## How to install
 
-```
-cd wp-content/plugins
-bower install git@bitbucket.org:OzzyCzech/omlightbox.git
-```
-
-Activate plugin in Wordpress admin area
+1. [Download Latest Version](https://github.com/OzzyCzech/omLightbox/archive/master.zip)
+2. Unzip to `wp-content/plugins`
+3. Activate plugin in Wordpress Admin Area

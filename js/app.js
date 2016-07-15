@@ -1,3 +1,4 @@
+import 'magnific-popup/dist/jquery.magnific-popup.js'
 /**
  * @author Roman Ozana <ozana@omdesign.cz>
  */
@@ -77,5 +78,3 @@
 	});
 
 })(jQuery);
-
-

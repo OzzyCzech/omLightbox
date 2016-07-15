@@ -1,0 +1,31 @@
+{
+  "name": "omlightbox",
+  "version": "1.0.0",
+  "description": "Wordpress plugin embeding [Magnific Popup is a responsive lightbox](http://dimsemenov.com/plugins/magnific-popup/)",
+  "main": "load.js",
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OzzyCzech/omLightbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OzzyCzech/omLightbox/issues"
+  },
+  "homepage": "https://github.com/OzzyCzech/omLightbox#readme"
+}
