@@ -1,44 +1,34 @@
-import path from 'path';
-import webpack from 'webpack';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
+import path from 'path'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
-export default {
-	context: path.resolve('./'),
+module.exports = {
+
 	entry: {
-		omLightbox: "./js/app"
+		omLightbox: './src/index.js'
 	},
 
-	// Výstupní soubory...
 	output: {
-		pathinfo: true,
-		filename: "./dist/[name].min.js",
-		chunkFilename: "./dist/[id].js",
-		sourceMapFilename: "./dist/[name].min.js.map"
-	},
-
-	externals: {'jquery': 'jQuery'},
-
-	resolve: {
-		modulesDirectories: ['node_modules', 'public/js'],
-		extensions: ['', '.js', '.jsx']
+		path: path.resolve(__dirname, 'dist'),
+		filename: '[name].min.js'
 	},
 
 	module: {
-		loaders: [
-			{test: /\.jsx?$/, loader: 'babel', include: /js/}
+		rules: [
+			{
+				test: /\.css$/,
+				use: [MiniCssExtractPlugin.loader, 'css-loader']
+			}
 		]
 	},
 
 	plugins: [
-		new CopyWebpackPlugin([{from: 'node_modules/magnific-popup/dist/magnific-popup.css', to: 'dist/omLightbox.css'}]),
-		new webpack.optimize.UglifyJsPlugin(
-				{
-					comments: false,
-					sourceMap: false,
-					pathinfo: false,
-					compress: {screw_ie8: true, keep_fnames: true, warnings: false},
-					mangle: {screw_ie8: true, keep_fnames: true, except: ['$', 'jQuery']}
-				}
-		)
-	]
+		new MiniCssExtractPlugin({
+			filename: "[name].css",
+			chunkFilename: "[id].css"
+		})
+	],
+
+	externals: {
+		"jquery": "jQuery"
+	},
 };

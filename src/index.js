@@ -1,7 +1,6 @@
-import 'magnific-popup/dist/jquery.magnific-popup.js'
-/**
- * @author Roman Ozana <ozana@omdesign.cz>
- */
+import 'magnific-popup';
+import css from 'magnific-popup/dist/magnific-popup.css';
+
 (function ($) {
 
 	// translate to Czech
