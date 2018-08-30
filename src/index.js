@@ -26,7 +26,7 @@ import css from 'magnific-popup/dist/magnific-popup.css';
 		// single images
 
 		$('a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]').each(function () {
-			if ($(this).parents('.gallery').length == 0) {
+			if ($(this).parents('.gallery').length == 0 && $(this).parents('.wp-block-gallery').length == 0) {
 				$(this).magnificPopup({
 					type: 'image',
 					callbacks: {
@@ -49,7 +49,9 @@ import css from 'magnific-popup/dist/magnific-popup.css';
 
 		// galleries
 
-		$('.gallery').each(function () {
+		$('.gallery, .wp-block-gallery').each(function () {
+
+			console.log(this);
 			$(this).magnificPopup({
 				delegate: 'a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]',
 				type: 'image',
