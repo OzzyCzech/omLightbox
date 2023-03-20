@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: omLightBox
- * Plugin URI: https://www.omdesign.cz
+ * Plugin URI: https://ozana.cz
  * Description: Small responsive lightbox for Wordpress
  * Version: 5.0
  * Author: Roman Ožana
- * Author URI: https://www.omdesign.cz/
+ * Author URI: https://ozana.cz/
  *
- * @author Roman Ozana <roman@omdesign.cz>
+ * @author Roman Ozana <roman@ozana.cz>
  */
 
 namespace omLightbox;
